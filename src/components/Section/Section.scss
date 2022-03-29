@@ -1,0 +1,30 @@
+@import "../../variables.scss";
+
+.section {
+  padding: 50px $xsPadding;
+
+  h2.section-header {
+    font-weight: 200;
+    font-size: 40px;
+    line-height: 105%;
+    font-weight: normal;
+    margin: 0 0 40px;
+  }
+
+  div.section-content {
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    color: $sectionCaptionColor;
+    line-height: 27px;
+  }
+
+  h2.section-header,
+  div.section-content {
+    font-family: $font;
+  }
+
+  &.section--centered {
+    text-align: center;
+  }
+}

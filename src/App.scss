@@ -1,0 +1,30 @@
+@import "./variables.scss";
+
+.App {
+  font-family: $font;
+
+  .app__defi-apps svg {
+    max-width: 100%;
+  }
+}
+
+@font-face {
+  font-family: "Hellix";
+  src: local("Hellix"),
+    url("./assets/fonts/Hellix-Regular.woff") format("truetype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Hellix";
+  src: local("Hellix"),
+    url("./assets/fonts/Hellix-Medium.woff") format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Hellix";
+  src: local("Hellix"),
+    url("./assets/fonts/Hellix-SemiBold.woff") format("truetype");
+  font-weight: 300;
+}

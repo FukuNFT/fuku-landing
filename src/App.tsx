@@ -31,6 +31,13 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <div className="app__header-content">
+        <h1 className="app__header">
+          Plug into <span className="app__header-purple">DeFi</span> and{" "}
+          <span className="app__header-purple">NFTs</span> at the same time
+        </h1>
+        <div className="app__caption">Earn DeFi yields while trading NFTs</div>
+      </div>
       <Section
         className="app-section"
         header="What is Fuku"

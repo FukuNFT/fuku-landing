@@ -3,6 +3,26 @@
 .App {
   font-family: $font;
 
+  .app__header-content {
+    padding: $xsPadding;
+
+    h1.app__header {
+      font-size: 48px;
+      font-weight: 300;
+      margin-top: 50px;
+    }
+
+    span.app__header-purple {
+      color: $purple;
+    }
+
+    .app__caption {
+      font-weight: 100;
+      font-size: 18px;
+      color: $sectionCaptionColor;
+    }
+  }
+
   .app__defi-apps svg {
     max-width: 100%;
   }

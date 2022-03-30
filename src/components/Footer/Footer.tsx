@@ -19,20 +19,7 @@ export const Footer = () => {
                 <SocialMedia
                   className="footer__social-icon"
                   link="https://twitter.com/fukunft"
-                  image={
-                    <React.Fragment>
-                      <Twitter />
-                    </React.Fragment>
-                  }
-                />
-                <SocialMedia
-                  className="footer__social-icon"
-                  link="https://discord.gg/wJMWhNa5"
-                  image={
-                    <React.Fragment>
-                      <Discord />
-                    </React.Fragment>
-                  }
+                  image={<Twitter />}
                 />
               </div>
             </div>

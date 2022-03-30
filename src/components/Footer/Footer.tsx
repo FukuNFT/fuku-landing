@@ -8,7 +8,7 @@ import { SubscribeForm } from "../SubscribeForm";
 export const Footer = () => {
   return (
     <footer className="footer">
-      <img src={FooterBackgroundLg} />
+      <img src={FooterBackgroundLg} alt="fuku-footer-background" />
       <div className="footer__content-container">
         <div className="footer__content">
           <h1 className="footer__header">Join our community</h1>

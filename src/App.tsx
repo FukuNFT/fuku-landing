@@ -44,7 +44,11 @@ function App() {
       <Navbar />
       <div className="app__content">
         <div className="app__header-container">
-          <img className="app__punks-image-lg" src={PunksLarge} />
+          <img
+            className="app__punks-image-lg"
+            src={PunksLarge}
+            alt="fuku-punks-large"
+          />
           <div className="app__header-content">
             <h1 className="app__header">
               Plug into <span className="app__header-purple">DeFi</span> and{" "}
@@ -54,7 +58,11 @@ function App() {
               Earn DeFi yields while trading NFTs
             </div>
           </div>
-          <img className="app__punks-image" src={PunksXs} />
+          <img
+            className="app__punks-image"
+            src={PunksXs}
+            alt="fuku-punks-small"
+          />
         </div>
         <Section
           className="app-section"

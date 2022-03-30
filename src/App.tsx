@@ -15,6 +15,7 @@ import { Section } from "./components/Section";
 import PunksLarge from "./assets/punk-large.png";
 import PunksXs from "./assets/punks-xs.png";
 import DefiAppsHorizontal from "./assets/defi-apps-horizontal.png";
+import { Partners } from "./components/Partners";
 
 function App() {
   const captionedImagesList: CaptionedImageProps[] = [
@@ -95,6 +96,12 @@ function App() {
               />
             </div>
           }
+          isCentered={true}
+        />
+        <Section
+          className="app-section"
+          header="Meet our partners"
+          content={<Partners />}
           isCentered={true}
         />
       </div>

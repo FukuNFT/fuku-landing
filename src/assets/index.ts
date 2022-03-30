@@ -8,3 +8,4 @@ export { ReactComponent as FukuLogoWhite } from "./fuku-logo-white.svg";
 export { ReactComponent as Twitter } from "./twitter.svg";
 export { ReactComponent as Discord } from "./discord.svg";
 export { ReactComponent as PurpleOvals } from "./purple-ovals.svg";
+export { ReactComponent as AlphaLogo } from "./alpha-logo.svg";

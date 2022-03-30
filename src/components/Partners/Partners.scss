@@ -1,0 +1,30 @@
+@import "../../variables.scss";
+
+.partners {
+  display: flex;
+  justify-content: center;
+
+  .partner {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-width: 100%;
+    }
+
+    @media (min-width: $sm) {
+      width: 33.3333333%;
+    }
+
+    @media (min-width: $md) {
+      width: 25%;
+    }
+
+    @media (min-width: $lg) {
+      width: 20%;
+    }
+  }
+}

@@ -22,7 +22,7 @@ export const Partners = () => {
   return (
     <div className="partners">
       {partners.map((p) => (
-        <a href={p.link} className="partner" target="_blank">
+        <a href={p.link} className="partner" target="_blank" rel="noreferrer">
           {p.logo}
         </a>
       ))}

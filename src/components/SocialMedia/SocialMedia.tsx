@@ -17,7 +17,7 @@ export const SocialMedia: React.FunctionComponent<SocialMediaProps> = ({
     [`${className}`]: !!className,
   });
   return (
-    <a href={link} className={elemClassName} target="_blank">
+    <a href={link} className={elemClassName} target="_blank" rel="noreferrer">
       {image}
     </a>
   );

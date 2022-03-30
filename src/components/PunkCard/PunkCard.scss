@@ -1,0 +1,20 @@
+@import "../../variables.scss";
+
+.punk-card {
+  background: #ffffff;
+  box-shadow: 0px 0px 37px rgba(26, 22, 55, 0.1);
+  border-radius: 15px;
+  padding: $xsPadding;
+  display: inline-block;
+}
+
+.punk-card__header {
+  margin: 10px 0 5px;
+  font-size: 10px;
+}
+
+.punk-card__caption {
+  font-size: 10px;
+  color: $sectionCaptionColor;
+  font-weight: 200;
+}

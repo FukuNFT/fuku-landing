@@ -3,8 +3,12 @@ import "./App.scss";
 import { DefiApps, EtherBox, EtherMarket, EtherPhone } from "./assets";
 import { CaptionedImageProps } from "./components/CaptionedImage";
 import { CaptionedImageList } from "./components/CaptionedImageList/CaptionedImageList";
+import { Footer } from "./components/Footer/Footer";
 import { Navbar } from "./components/Navbar";
+import { Punks } from "./components/Punks";
 import { Section } from "./components/Section";
+import PunksLarge from "./assets/punk-large.png";
+import PunksXs from "./assets/punks-xs.png";
 
 function App() {
   const captionedImagesList: CaptionedImageProps[] = [
@@ -31,12 +35,17 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <div className="app__header-content">
-        <h1 className="app__header">
-          Plug into <span className="app__header-purple">DeFi</span> and{" "}
-          <span className="app__header-purple">NFTs</span> at the same time
-        </h1>
-        <div className="app__caption">Earn DeFi yields while trading NFTs</div>
+      <div className="app__header-container">
+        <div className="app__header-content">
+          <h1 className="app__header">
+            Plug into <span className="app__header-purple">DeFi</span> and{" "}
+            <span className="app__header-purple">NFTs</span> at the same time
+          </h1>
+          <div className="app__caption">
+            Earn DeFi yields while trading NFTs
+          </div>
+        </div>
+        <img className="app__punks-image" src={PunksXs} />
       </div>
       <Section
         className="app-section"
@@ -58,6 +67,7 @@ function App() {
         }
         isCentered={true}
       />
+      <Footer />
     </div>
   );
 }

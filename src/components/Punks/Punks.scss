@@ -1,0 +1,21 @@
+@import "../../variables.scss";
+
+.punks {
+  position: relative;
+}
+
+.punks-background {
+  width: 100%;
+}
+
+.punks-images-container {
+  padding-top: 120%;
+}
+
+.punks-images {
+  position: absolute;
+  top: -50px;
+  bottom: -50px;
+  left: $xsPadding;
+  right: $xsPadding;
+}

@@ -26,6 +26,18 @@
   .app__defi-apps svg {
     max-width: 100%;
   }
+
+  .app-punks-section {
+    margin-top: 80px;
+  }
+
+  .app__punks-image {
+    width: 100%;
+
+    @media (min-width: $sm) {
+      display: none;
+    }
+  }
 }
 
 @font-face {

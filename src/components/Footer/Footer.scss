@@ -1,0 +1,87 @@
+@import "../../variables.scss";
+
+.footer {
+  position: relative;
+
+  img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.footer__social {
+  margin-top: 20px;
+
+  @media (min-width: $md) {
+    margin-top: 50px;
+  }
+}
+
+.footer__content-container {
+  padding: 50px $xsPadding;
+  position: relative;
+  z-index: 2;
+
+  @media (min-width: $md) {
+    padding: 50px $smPadding;
+
+    .footer__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .footer__content-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media (min-width: $md) {
+        align-items: flex-start;
+      }
+    }
+  }
+
+  @media (min-width: $lg) {
+    padding: 50px $lgPadding;
+  }
+}
+
+.footer__header {
+  color: #fff;
+  font-size: 48px;
+  text-align: center;
+
+  @media (min-width: $md) {
+    text-align: left;
+    font-size: 70px;
+    margin-top: 0;
+  }
+
+  @media (min-width: $lg) {
+    font-size: 80px;
+  }
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 100px;
+
+  @media (min-width: $md) {
+    text-align: left;
+    margin-top: 200px;
+  }
+}
+
+.footer__social-list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__social-icon {
+  margin: 0 10px;
+}

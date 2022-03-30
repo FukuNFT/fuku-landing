@@ -13,19 +13,41 @@
   }
 }
 
+.footer__social {
+  margin-top: 20px;
+
+  @media (min-width: $md) {
+    margin-top: 50px;
+  }
+}
+
 .footer__content-container {
   padding: 50px $xsPadding;
   position: relative;
   z-index: 2;
 
   @media (min-width: $md) {
-    padding: 50px $lgPadding;
+    padding: 50px $smPadding;
 
     .footer__content {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
     }
+
+    .footer__content-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media (min-width: $md) {
+        align-items: flex-start;
+      }
+    }
+  }
+
+  @media (min-width: $lg) {
+    padding: 50px $lgPadding;
   }
 }
 
@@ -36,7 +58,12 @@
 
   @media (min-width: $md) {
     text-align: left;
-    font-size: 85px;
+    font-size: 70px;
+    margin-top: 0;
+  }
+
+  @media (min-width: $lg) {
+    font-size: 80px;
   }
 }
 

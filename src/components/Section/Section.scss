@@ -29,7 +29,7 @@
   }
 
   @media (min-width: $md) {
-    padding: 100px $lgPadding;
+    padding: 100px $smPadding;
 
     &.section--text {
       display: flex;
@@ -39,5 +39,9 @@
         flex: 1;
       }
     }
+  }
+
+  @media (min-width: $lg) {
+    padding: 100px $lgPadding;
   }
 }

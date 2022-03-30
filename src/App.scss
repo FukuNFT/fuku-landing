@@ -3,13 +3,94 @@
 .App {
   font-family: $font;
 
+  .app__content {
+    max-width: 2000px;
+    margin: 0 auto;
+  }
+
+  .how-it-works {
+    .app-section__purple-ovals {
+      display: none;
+    }
+
+    @media (min-width: $md) {
+      display: flex;
+
+      .app-section__purple-ovals {
+        display: block;
+        max-width: 550px;
+      }
+
+      .app-section__how-it-works-section,
+      .app-section__purple-ovals {
+        flex: 1;
+      }
+    }
+  }
+
+  .app__header-container {
+    @media (min-width: $sm) {
+      display: flex;
+      align-items: center;
+
+      .app__punks-image-lg {
+        flex: 1;
+        width: 40%;
+        max-width: 600px;
+      }
+
+      .app__header-content {
+        flex: 2;
+      }
+    }
+
+    @media (min-width: $sm) {
+      display: flex;
+      align-items: center;
+
+      .app__header-content {
+        flex: 2;
+      }
+    }
+
+    @media (min-width: $lg) {
+      .app__header-content {
+        flex: 1;
+      }
+    }
+  }
+
+  .app__punks-image {
+    width: 100%;
+
+    @media (min-width: $sm) {
+      display: none;
+    }
+  }
+
+  .app__punks-image-lg {
+    display: none;
+
+    @media (min-width: $sm) {
+      display: block;
+    }
+  }
+
   .app__header-content {
     padding: $xsPadding;
+
+    @media (min-width: $md) {
+      margin-left: $smPadding;
+    }
 
     h1.app__header {
       font-size: 48px;
       font-weight: 300;
       margin-top: 50px;
+
+      @media (min-width: $md) {
+        font-size: 75px;
+      }
     }
 
     span.app__header-purple {
@@ -20,6 +101,27 @@
       font-weight: 100;
       font-size: 18px;
       color: $sectionCaptionColor;
+
+      @media (min-width: $md) {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .defi-apps .section-header {
+    @media (min-width: $md) {
+      max-width: 655px;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+
+  .app__defi-apps {
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: $md) {
+      margin-top: 50px;
     }
   }
 
@@ -27,16 +129,23 @@
     max-width: 100%;
   }
 
-  .app-punks-section {
-    margin-top: 80px;
+  .app__defi-apps-logo-lg {
+    display: none;
+
+    @media (min-width: $md) {
+      display: block;
+      max-width: 100%;
+    }
   }
 
-  .app__punks-image {
-    width: 100%;
-
-    @media (min-width: $sm) {
+  .app__defi-apps-logo-xs {
+    @media (min-width: $md) {
       display: none;
     }
+  }
+
+  .app-punks-section {
+    margin-top: 80px;
   }
 }
 

@@ -27,4 +27,17 @@
   &.section--centered {
     text-align: center;
   }
+
+  @media (min-width: $md) {
+    padding: 100px $lgPadding;
+
+    &.section--text {
+      display: flex;
+
+      .section-header,
+      .section-content {
+        flex: 1;
+      }
+    }
+  }
 }

@@ -15,7 +15,7 @@ export const Partners = () => {
       link: "https://alphafinance.io/",
     },
     {
-      logo: <img src={NFTTech} alt="nft-tech" />,
+      logo: <img src={NFTTech} alt="nft-tech" style={{ maxWidth: "70%" }} />,
       link: "https://www.nfttech.com/",
     },
   ];

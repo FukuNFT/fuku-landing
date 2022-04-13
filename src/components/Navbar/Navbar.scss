@@ -2,4 +2,20 @@
 
 .navbar {
   padding: $xsPadding;
+  display: flex;
+}
+
+.navbar__right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+}
+
+a.navbar__link {
+  text-decoration: none;
+  padding: 12px 24px;
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
 }

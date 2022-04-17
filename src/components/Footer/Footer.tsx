@@ -1,5 +1,5 @@
 import React from "react";
-import { Discord, FukuLogoWhite, Twitter } from "../../assets";
+import { FukuLogoWhite, Twitter } from "../../assets";
 import { SocialMedia } from "../SocialMedia";
 import "./Footer.scss";
 import FooterBackgroundLg from "../../assets/footer-lg.png";

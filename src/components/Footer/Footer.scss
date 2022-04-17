@@ -25,6 +25,8 @@
   padding: 50px $xsPadding;
   position: relative;
   z-index: 2;
+  max-width: $maxWidth;
+  margin: 0 auto;
 
   @media (min-width: $md) {
     padding: 50px $smPadding;

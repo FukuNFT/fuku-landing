@@ -11,6 +11,11 @@
     width: 100%;
     height: 100%;
   }
+
+  .footer__content-max {
+    margin: 0 auto;
+    max-width: $maxWidth;
+  }
 }
 
 .footer__social {
@@ -25,7 +30,6 @@
   padding: 50px $xsPadding;
   position: relative;
   z-index: 2;
-  max-width: $maxWidth;
   margin: 0 auto;
 
   @media (min-width: $md) {

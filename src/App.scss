@@ -13,6 +13,10 @@
       display: none;
     }
 
+    .app-section__how-it-works-section .section-content {
+      margin-top: 100px;
+    }
+
     @media (min-width: $md) {
       display: flex;
 

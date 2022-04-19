@@ -71,13 +71,24 @@ function App() {
           content={
             <React.Fragment>
               <p>
-                Fuku Marketplace is a decentralized marketplace that allows
-                buyers to place bids on NFTs while the underlying assets on
-                their bids are earning yield by farming various DeFi protocols.
+                Fuku is a decentralized marketplace that allows buyers to place
+                bids on NFTs while the underlying assets on their bids are
+                earning yield by farming various DeFi protocols.
               </p>
+            </React.Fragment>
+          }
+        />
+        <Section
+          className="app-section"
+          header="What is Fuku solving"
+          isText={true}
+          content={
+            <React.Fragment>
               <p>
-                This solves the problem in existing NFT markets where ETH used
-                for bidding is locked up as an idle asset.
+                Fuku solves the problem in existing NFT marketplaces where the
+                ETH used for bidding is locked up as an idle asset. Fuku allows
+                users to remain in their favourite DeFi assets while trading
+                NFTs.
               </p>
             </React.Fragment>
           }
@@ -94,7 +105,7 @@ function App() {
         </div>
         <Section
           className="app-section defi-apps"
-          header="Use your DeFi apps funds to buy and trade NFT assets"
+          header="Use your DeFi assets to buy and trade NFTs"
           content={
             <div className="app__defi-apps">
               <DefiApps className="app__defi-apps-logo-xs" />

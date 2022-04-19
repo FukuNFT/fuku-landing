@@ -1,12 +1,16 @@
 @import "../../variables.scss";
 
 .section {
-  padding: 50px $xsPadding;
+  padding: 25px $xsPadding;
+
+  @media (min-width: $sm) {
+    padding: 50px $xsPadding;
+  }
 
   h2.section-header {
     font-weight: 200;
     font-size: 40px;
-    line-height: 105%;
+    line-height: 55px;
     font-weight: normal;
     margin: 0 0 40px;
   }

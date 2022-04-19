@@ -12,10 +12,9 @@ import { CaptionedImageList } from "./components/CaptionedImageList/CaptionedIma
 import { Footer } from "./components/Footer/Footer";
 import { Navbar } from "./components/Navbar";
 import { Section } from "./components/Section";
-import PunksLarge from "./assets/punk-large.png";
-import PunksXs from "./assets/punks-xs.png";
 import DefiAppsHorizontal from "./assets/defi-apps-horizontal.png";
 import { Partners } from "./components/Partners";
+import { Punks } from "./components/Punks";
 
 function App() {
   const captionedImagesList: CaptionedImageProps[] = [
@@ -44,25 +43,16 @@ function App() {
       <Navbar />
       <div className="app__content">
         <div className="app__header-container">
-          <img
-            className="app__punks-image-lg"
-            src={PunksLarge}
-            alt="fuku-punks-large"
-          />
+          <Punks className="app__header-punks" />
           <div className="app__header-content">
             <h1 className="app__header">
-              Plug into <span className="app__header-purple">DeFi</span> and{" "}
-              <span className="app__header-purple">NFTs</span> at the same time
+              Earn <span className="app__header-purple">DeFi</span> yields while
+              trading <span className="app__header-purple">NFTs</span>
             </h1>
             <div className="app__caption">
-              Earn DeFi yields while trading NFTs
+              Plug into DeFi and NFTs at the same time
             </div>
           </div>
-          <img
-            className="app__punks-image"
-            src={PunksXs}
-            alt="fuku-punks-small"
-          />
         </div>
         <Section
           className="app-section"

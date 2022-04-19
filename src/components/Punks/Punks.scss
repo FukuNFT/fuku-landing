@@ -1,0 +1,78 @@
+@import "../../variables.scss";
+
+.punks {
+  background: url("../../assets/purple-background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+
+  @media (min-width: $sm) {
+    border-radius: 40px;
+  }
+
+  @media (min-width: $md) {
+    border-radius: 90px;
+  }
+
+  .punks__col-1 {
+    width: 40%;
+  }
+
+  .punks__col-2 {
+    width: 60%;
+  }
+
+  .punks__card {
+    max-width: 100%;
+  }
+
+  .punks__col-1,
+  .punks__col-2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .punks__col-1 {
+    justify-content: center;
+    padding: 0 30px;
+
+    @media (min-width: $lg) {
+      padding: 0 50px;
+    }
+  }
+
+  .punks__col-2 {
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+
+    @media (min-width: $lg) {
+      padding-right: 60px;
+    }
+  }
+
+  .ape,
+  .punk {
+    position: relative;
+  }
+
+  .ape {
+    margin-bottom: 25%;
+    max-width: 80%;
+    margin-top: -50px;
+  }
+
+  .punk {
+    margin-bottom: -50px;
+
+    .punk-card__title {
+      font-size: 14px;
+    }
+
+    @media (min-width: $lg) {
+      .punk-card__title {
+        font-size: 24px;
+      }
+    }
+  }
+}

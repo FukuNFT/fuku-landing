@@ -16,9 +16,14 @@ export const CaptionedImageList: React.FunctionComponent<
   });
   return (
     <div className={elemClassName}>
-      {captionedImages.map((p) => (
+      {captionedImages.map((p, i) => (
         <div className="captioned-image-list__item">
-          <CaptionedImage {...p} />
+          <div className="captioned-image-list__index-container">
+            <div className="captioned-image-list__top-line" />
+            <div className="captioned-image-list__index">{i + 1}</div>
+            <div className="captioned-image-list__bottom-line" />
+          </div>
+          <CaptionedImage {...p} className="captioned-image-list__img" />
         </div>
       ))}
     </div>

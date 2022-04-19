@@ -14,15 +14,17 @@ export const Navbar: React.FunctionComponent<NavbarProps> = ({ className }) => {
 
   return (
     <nav className={elemClassName}>
-      <FukuLogoBlack />
-      <div className="navbar__right">
-        <a
-          className="navbar__link"
-          href="https://docs.fuku.xyz"
-          target="_blank"
-        >
-          Docs
-        </a>
+      <div className="navbar__content">
+        <FukuLogoBlack />
+        <div className="navbar__right">
+          <a
+            className="navbar__link"
+            href="https://docs.fuku.xyz"
+            target="_blank"
+          >
+            Docs
+          </a>
+        </div>
       </div>
     </nav>
   );

@@ -4,13 +4,17 @@
   font-family: $font;
 
   .app__content {
-    max-width: 1500px;
+    max-width: $maxWidth;
     margin: 0 auto;
   }
 
   .how-it-works {
     .app-section__purple-ovals {
       display: none;
+    }
+
+    .app-section__how-it-works-section .section-content {
+      margin-top: 100px;
     }
 
     @media (min-width: $md) {
@@ -25,37 +29,65 @@
       .app-section__purple-ovals {
         flex: 1;
       }
+
+      .app-section__how-it-works-section .section-content {
+        margin-top: 125px;
+      }
     }
   }
 
   .app__header-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+
+    .app__header-punks {
+      order: 2;
+      margin-top: $lgPadding;
+    }
+
+    .app__header-content {
+      order: 1;
+    }
+
     @media (min-width: $sm) {
+      padding-left: $xsPadding;
       display: flex;
       align-items: center;
+      flex-direction: row;
 
-      .app__punks-image-lg {
+      .app__header-punks {
+        order: 1;
         flex: 1;
-        width: 40%;
+        width: 45%;
         max-width: 600px;
       }
 
       .app__header-content {
-        flex: 2;
+        order: 2;
+        width: 55%;
       }
     }
 
-    @media (min-width: $sm) {
-      display: flex;
-      align-items: center;
+    @media (min-width: $md) {
+      padding-left: $smPadding;
+
+      .app__header-punks {
+        width: 40%;
+      }
 
       .app__header-content {
-        flex: 2;
+        flex: 1;
+        margin-left: 30px;
       }
     }
 
     @media (min-width: $lg) {
+      padding-left: $lgPadding;
+
       .app__header-content {
         flex: 1;
+        margin-left: 50px;
       }
     }
   }
@@ -79,10 +111,6 @@
   .app__header-content {
     padding: $xsPadding;
 
-    @media (min-width: $md) {
-      margin-left: $smPadding;
-    }
-
     h1.app__header {
       font-size: 48px;
       font-weight: 300;
@@ -94,7 +122,9 @@
     }
 
     span.app__header-purple {
-      color: $purple;
+      background: url("./assets/purple-background.svg");
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     .app__caption {

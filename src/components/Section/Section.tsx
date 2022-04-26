@@ -8,6 +8,7 @@ export interface SectionProps {
   isCentered?: boolean;
   className?: string;
   isText?: boolean;
+  smallPadding?: boolean;
 }
 
 export const Section: React.FunctionComponent<SectionProps> = ({
@@ -16,11 +17,13 @@ export const Section: React.FunctionComponent<SectionProps> = ({
   className,
   isCentered,
   isText,
+  smallPadding,
 }) => {
   const elemClassName = clsx("section", {
     [`${className}`]: !!className,
     "section--centered": isCentered,
     "section--text": isText,
+    "section--small-padding": smallPadding,
   });
   return (
     <div className={elemClassName}>

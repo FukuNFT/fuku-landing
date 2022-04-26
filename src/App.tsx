@@ -15,6 +15,8 @@ import { Section } from "./components/Section";
 import DefiAppsHorizontal from "./assets/defi-apps-horizontal.png";
 import { Partners } from "./components/Partners";
 import { Punks } from "./components/Punks";
+import { AlphaLogo } from "./assets";
+import NFTTech from "./assets/nft-tech-logo.gif";
 
 function App() {
   const captionedImagesList: CaptionedImageProps[] = [
@@ -109,12 +111,46 @@ function App() {
         />
         <Section
           className="app-section"
+          smallPadding={true}
           header="Meet our partners"
-          content={<Partners />}
+          content={
+            <Partners
+              partners={[
+                {
+                  logo: (
+                    <img
+                      src={NFTTech}
+                      alt="nft-tech"
+                      style={{ maxWidth: "70%" }}
+                    />
+                  ),
+                  link: "https://www.nfttech.com/",
+                },
+              ]}
+            />
+          }
+          isCentered={true}
+        />
+        <Section
+          className="app-section"
+          smallPadding={true}
+          header="Incubated by"
+          content={
+            <Partners
+              partners={[
+                {
+                  logo: <AlphaLogo />,
+                  link: "https://alphafinance.io/",
+                },
+              ]}
+            />
+          }
           isCentered={true}
         />
       </div>
-      <Footer />
+      <div className="app__footer">
+        <Footer />
+      </div>
     </div>
   );
 }

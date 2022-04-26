@@ -3,6 +3,14 @@
 .App {
   font-family: $font;
 
+  .app__footer {
+    margin-top: 25px;
+
+    @media (min-width: $sm) {
+      margin-top: 50px;
+    }
+  }
+
   .app__content {
     max-width: $maxWidth;
     margin: 0 auto;

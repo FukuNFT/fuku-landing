@@ -7,6 +7,14 @@
     padding: 50px $xsPadding;
   }
 
+  &.section--small-padding {
+    padding: 12.5px $xsPadding;
+
+    @media (min-width: $sm) {
+      padding: 25px $xsPadding;
+    }
+  }
+
   h2.section-header {
     font-weight: 200;
     font-size: 40px;

@@ -1,6 +1,5 @@
 import React, { ReactElement } from "react";
-import { AlphaLogo } from "../../assets";
-import NFTTech from "../../assets/nft-tech-logo.gif";
+
 import "./Partners.scss";
 
 interface Partner {
@@ -8,17 +7,13 @@ interface Partner {
   link: string;
 }
 
-export const Partners = () => {
-  const partners: Partner[] = [
-    {
-      logo: <AlphaLogo />,
-      link: "https://alphafinance.io/",
-    },
-    {
-      logo: <img src={NFTTech} alt="nft-tech" style={{ maxWidth: "70%" }} />,
-      link: "https://www.nfttech.com/",
-    },
-  ];
+interface PartnerProps {
+  partners: Partner[];
+}
+
+export const Partners: React.FunctionComponent<PartnerProps> = ({
+  partners,
+}) => {
   return (
     <div className="partners">
       {partners.map((p) => (

@@ -94,7 +94,7 @@ function App() {
                 </div>
                 <Section
                     className="app-section defi-apps"
-                    header="Use your DeFi assets to buy and trade NFTs"
+                    header="Maximize your liquidity to get exposure on blue chips"
                     content={
                         <div className="app__defi-apps">
                             <DefiApps className="app__defi-apps-logo-xs"/>
